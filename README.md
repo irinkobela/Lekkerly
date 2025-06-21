@@ -119,5 +119,4 @@ Let’s make it delightful.
 
 ---
 
-
-# Lekkerly
+Property of Irine Bakhutashvili 2025
