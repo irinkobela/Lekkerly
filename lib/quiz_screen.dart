@@ -2,9 +2,9 @@
 
 import 'dart:math';
 import 'package:flutter/material.dart';
-import 'models/vocabulary_models.dart';
-import 'models/quiz_models.dart';
-import 'quiz_results_screen.dart';
+import 'package:lekkerly/models/vocabulary_models.dart';
+import 'package:lekkerly/models/quiz_models.dart';
+import 'package:lekkerly/quiz_results_screen.dart';
 import 'package:audioplayers/audioplayers.dart';
 
 class QuizScreen extends StatefulWidget {
@@ -16,8 +16,7 @@ class QuizScreen extends StatefulWidget {
   State<QuizScreen> createState() => _QuizScreenState();
 }
 
-class _QuizScreenState extends State<QuizScreen>
-    with SingleTickerProviderStateMixin {
+class _QuizScreenState extends State<QuizScreen> with TickerProviderStateMixin {
   late List<QuizQuestion> _quizQuestions;
   int _currentQuestionIndex = 0;
   int _score = 0;
@@ -25,28 +24,38 @@ class _QuizScreenState extends State<QuizScreen>
   bool _isAnswered = false;
 
   final AudioPlayer _audioPlayer = AudioPlayer();
-  late AnimationController _animationController;
-  late Animation<double> _fadeAnimation;
+  late AnimationController _pageFadeController;
+  late AnimationController _shakeController; // For wrong answer shake
+  late Animation<double> _shakeAnimation;
 
   @override
   void initState() {
     super.initState();
     _quizQuestions = _generateQuiz(widget.category.items, 10);
 
-    _animationController = AnimationController(
+    _pageFadeController = AnimationController(
       vsync: this,
       duration: const Duration(milliseconds: 400),
     );
-    _fadeAnimation = CurvedAnimation(
-      parent: _animationController,
-      curve: Curves.easeInOut,
+
+    _shakeController = AnimationController(
+      vsync: this,
+      duration: const Duration(milliseconds: 500),
     );
-    _animationController.forward();
+
+    // A sine-wave like shake animation
+    _shakeAnimation = Tween<double>(begin: 0, end: 1).animate(CurvedAnimation(
+      parent: _shakeController,
+      curve: Curves.elasticIn,
+    ));
+
+    _pageFadeController.forward();
   }
 
   @override
   void dispose() {
-    _animationController.dispose();
+    _pageFadeController.dispose();
+    _shakeController.dispose();
     _audioPlayer.dispose();
     super.dispose();
   }
@@ -56,7 +65,6 @@ class _QuizScreenState extends State<QuizScreen>
     int questionCount,
   ) {
     if (items.length < 4) {
-      // Not enough items to generate a meaningful quiz
       return [];
     }
 
@@ -87,7 +95,6 @@ class _QuizScreenState extends State<QuizScreen>
     });
   }
 
-  // UPDATED: This method no longer automatically advances to the next question.
   void _handleAnswer(int selectedIndex) async {
     if (_isAnswered) return;
 
@@ -100,13 +107,17 @@ class _QuizScreenState extends State<QuizScreen>
     setState(() {
       _selectedOptionIndex = selectedIndex;
       _isAnswered = true;
-      if (isCorrect) _score++;
+      if (isCorrect) {
+        _score++;
+      } else {
+        // Start the shake animation on wrong answer
+        _shakeController.forward(from: 0);
+      }
     });
   }
 
-  // NEW: This method is called when the user taps the 'Next' button.
   void _nextQuestion() async {
-    await _animationController.reverse();
+    await _pageFadeController.reverse();
 
     if (_currentQuestionIndex < _quizQuestions.length - 1) {
       setState(() {
@@ -114,7 +125,7 @@ class _QuizScreenState extends State<QuizScreen>
         _selectedOptionIndex = null;
         _isAnswered = false;
       });
-      _animationController.forward();
+      _pageFadeController.forward();
     } else {
       _audioPlayer.play(AssetSource('sounds/endofquiz.wav'));
 
@@ -134,31 +145,6 @@ class _QuizScreenState extends State<QuizScreen>
         ),
       );
     }
-  }
-
-  Color _determineButtonColor(int index, bool isCorrectOption) {
-    if (!_isAnswered) return Colors.grey.shade200;
-    if (isCorrectOption) return Colors.green.shade600;
-    if (_selectedOptionIndex == index) return Colors.red.shade600;
-    return Colors.grey.shade300;
-  }
-
-  Color _determineTextColor(int index, bool isCorrectOption) {
-    if (!_isAnswered) return Colors.black87;
-    return Colors.white;
-  }
-
-  Icon? _determineIcon(int index, bool isCorrectOption) {
-    if (!_isAnswered) {
-      return null;
-    }
-    if (isCorrectOption) {
-      return const Icon(Icons.check_circle, color: Colors.white);
-    }
-    if (_selectedOptionIndex == index) {
-      return const Icon(Icons.cancel, color: Colors.white);
-    }
-    return null;
   }
 
   @override
@@ -195,7 +181,7 @@ class _QuizScreenState extends State<QuizScreen>
         ),
       ),
       body: FadeTransition(
-        opacity: _fadeAnimation,
+        opacity: _pageFadeController,
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 20),
           child: Column(
@@ -225,48 +211,20 @@ class _QuizScreenState extends State<QuizScreen>
               ),
               const Spacer(flex: 2),
               ...List.generate(currentQuestion.options.length, (index) {
-                final option = currentQuestion.options[index];
-                final color = _determineButtonColor(index, option.isCorrect);
-                final textColor = _determineTextColor(index, option.isCorrect);
-                final icon = _determineIcon(index, option.isCorrect);
-
-                return Padding(
-                  padding: const EdgeInsets.symmetric(vertical: 6.0),
-                  child: FilledButton.icon(
-                    onPressed: _isAnswered ? null : () => _handleAnswer(index),
-                    icon: icon ?? const SizedBox.shrink(),
-                    label: Text(
-                      option.text,
-                      style: TextStyle(
-                        fontSize: 18,
-                        fontWeight: FontWeight.w600,
-                        color: textColor,
-                      ),
-                    ),
-                    style: FilledButton.styleFrom(
-                      backgroundColor: color,
-                      padding: const EdgeInsets.symmetric(vertical: 18),
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(16),
-                      ),
-                      elevation: 4,
-                    ),
-                  ),
+                return AnswerButton(
+                  option: currentQuestion.options[index],
+                  isSelected: _selectedOptionIndex == index,
+                  isAnswered: _isAnswered,
+                  shakeAnimation: _shakeAnimation,
+                  onTap: () => _handleAnswer(index),
                 );
               }),
               const Spacer(flex: 2),
-
-              // NEW: The "Next" button, which only appears after answering.
               if (_isAnswered)
                 ElevatedButton(
                   onPressed: _nextQuestion,
                   style: ElevatedButton.styleFrom(
                     padding: const EdgeInsets.symmetric(vertical: 16),
-                    backgroundColor: Theme.of(context).colorScheme.primary,
-                    foregroundColor: Colors.white,
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(16),
-                    ),
                   ),
                   child: Text(
                     _currentQuestionIndex < _quizQuestions.length - 1
@@ -279,6 +237,129 @@ class _QuizScreenState extends State<QuizScreen>
           ),
         ),
       ),
+    );
+  }
+}
+
+// NEW WIDGET: A dedicated button for answers to handle its own animations
+class AnswerButton extends StatefulWidget {
+  final QuizOption option;
+  final bool isSelected;
+  final bool isAnswered;
+  final Animation<double> shakeAnimation;
+  final VoidCallback onTap;
+
+  const AnswerButton({
+    super.key,
+    required this.option,
+    required this.isSelected,
+    required this.isAnswered,
+    required this.shakeAnimation,
+    required this.onTap,
+  });
+
+  @override
+  State<AnswerButton> createState() => _AnswerButtonState();
+}
+
+class _AnswerButtonState extends State<AnswerButton>
+    with SingleTickerProviderStateMixin {
+  late AnimationController _pulseController;
+  late Animation<double> _pulseAnimation;
+
+  @override
+  void initState() {
+    super.initState();
+    _pulseController = AnimationController(
+      vsync: this,
+      duration: const Duration(milliseconds: 250),
+      reverseDuration: const Duration(milliseconds: 400),
+    );
+    _pulseAnimation = Tween<double>(begin: 1.0, end: 1.05).animate(
+      CurvedAnimation(parent: _pulseController, curve: Curves.easeOut),
+    );
+  }
+
+  @override
+  void dispose() {
+    _pulseController.dispose();
+    super.dispose();
+  }
+
+  @override
+  void didUpdateWidget(covariant AnswerButton oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    if (widget.isAnswered && widget.option.isCorrect) {
+      // Pulse the correct answer
+      _pulseController.repeat(reverse: true);
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    Color? backgroundColor;
+    Color? foregroundColor;
+    IconData? iconData;
+
+    if (widget.isAnswered) {
+      if (widget.option.isCorrect) {
+        backgroundColor = Colors.green.shade600;
+        foregroundColor = Colors.white;
+        iconData = Icons.check_circle;
+      } else if (widget.isSelected) {
+        backgroundColor = Colors.red.shade600;
+        foregroundColor = Colors.white;
+        iconData = Icons.cancel;
+      } else {
+        backgroundColor = Theme.of(context).colorScheme.surfaceVariant;
+      }
+    }
+
+    Widget button = ScaleTransition(
+      scale: _pulseAnimation,
+      child: FilledButton.icon(
+        onPressed: widget.onTap,
+        icon: iconData != null
+            ? Icon(iconData, color: foregroundColor)
+            : const SizedBox.shrink(),
+        label: Text(
+          widget.option.text,
+          style: TextStyle(
+            fontSize: 18,
+            fontWeight: FontWeight.w600,
+            color: foregroundColor,
+          ),
+        ),
+        style: FilledButton.styleFrom(
+          backgroundColor: backgroundColor,
+          disabledBackgroundColor: backgroundColor,
+          padding: const EdgeInsets.symmetric(vertical: 18),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(16),
+          ),
+          elevation: 2,
+        ),
+      ),
+    );
+
+    // Apply shake animation only to the selected wrong answer
+    if (widget.isAnswered && widget.isSelected && !widget.option.isCorrect) {
+      return AnimatedBuilder(
+        animation: widget.shakeAnimation,
+        builder: (context, child) {
+          final sineValue = sin(2 * pi * widget.shakeAnimation.value);
+          return Transform.translate(
+            offset: Offset(sineValue * 10, 0),
+            child: child,
+          );
+        },
+        child: button,
+      );
+    }
+
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical: 6.0),
+      child: button,
     );
   }
 }
