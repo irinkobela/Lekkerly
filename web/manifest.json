@@ -1,11 +1,11 @@
 {
-    "name": "dutch_buddy_app",
-    "short_name": "dutch_buddy_app",
+    "name": "Lekkerly",
+    "short_name": "Lekkerly",
     "start_url": ".",
     "display": "standalone",
-    "background_color": "#0175C2",
-    "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "background_color": "#F96E46",
+    "theme_color": "#F96E46",
+    "description": "A fun and modern app for learning the Dutch language.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
