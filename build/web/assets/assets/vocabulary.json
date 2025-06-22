@@ -1,0 +1,2920 @@
+{
+    "Greetings": [
+        {
+            "id": 1,
+            "dutch_word": "Hallo",
+            "english_translation": "Hello"
+        },
+        {
+            "id": 2,
+            "dutch_word": "Goedemorgen",
+            "english_translation": "Good morning"
+        },
+        {
+            "id": 3,
+            "dutch_word": "Goedemiddag",
+            "english_translation": "Good afternoon"
+        },
+        {
+            "id": 4,
+            "dutch_word": "Goedenavond",
+            "english_translation": "Good evening"
+        },
+        {
+            "id": 5,
+            "dutch_word": "Tot ziens",
+            "english_translation": "Goodbye"
+        },
+        {
+            "id": 6,
+            "dutch_word": "Hoe gaat het?",
+            "english_translation": "How are you?"
+        },
+        {
+            "id": 7,
+            "dutch_word": "Het gaat goed",
+            "english_translation": "I am fine"
+        },
+        {
+            "id": 8,
+            "dutch_word": "Dank je",
+            "english_translation": "Thank you"
+        },
+        {
+            "id": 9,
+            "dutch_word": "Alsjeblieft",
+            "english_translation": "Please/You're welcome"
+        },
+        {
+            "id": 10,
+            "dutch_word": "Sorry",
+            "english_translation": "Sorry"
+        },
+        {
+            "id": 11,
+            "dutch_word": "Ik heet",
+            "english_translation": "My name is"
+        },
+        {
+            "id": 12,
+            "dutch_word": "Aangenaam",
+            "english_translation": "Nice to meet you"
+        },
+        {
+            "id": 13,
+            "dutch_word": "Tot morgen",
+            "english_translation": "See you tomorrow"
+        },
+        {
+            "id": 14,
+            "dutch_word": "Welkom",
+            "english_translation": "Welcome"
+        },
+        {
+            "id": 15,
+            "dutch_word": "Prettige dag",
+            "english_translation": "Have a nice day"
+        },
+        {
+            "id": 148,
+            "dutch_word": "Hoe maakt u het?",
+            "english_translation": "How do you do?"
+        },
+        {
+            "id": 149,
+            "dutch_word": "Met mij gaat het prima",
+            "english_translation": "I'm doing great"
+        },
+        {
+            "id": 150,
+            "dutch_word": "Lang niet gezien",
+            "english_translation": "Long time no see"
+        },
+        {
+            "id": 151,
+            "dutch_word": "Hoe is het met u?",
+            "english_translation": "How are you (formal)?"
+        },
+        {
+            "id": 152,
+            "dutch_word": "Het was prettig u te ontmoeten",
+            "english_translation": "It was a pleasure to meet you"
+        },
+        {
+            "id": 153,
+            "dutch_word": "Tot snel",
+            "english_translation": "See you soon"
+        },
+        {
+            "id": 154,
+            "dutch_word": "Ik wens je een fijne dag",
+            "english_translation": "I wish you a nice day"
+        },
+        {
+            "id": 155,
+            "dutch_word": "Geniet van je dag",
+            "english_translation": "Enjoy your day"
+        },
+        {
+            "id": 156,
+            "dutch_word": "Tot de volgende keer",
+            "english_translation": "Until next time"
+        },
+        {
+            "id": 157,
+            "dutch_word": "Hoe was je dag?",
+            "english_translation": "How was your day?"
+        },
+        {
+            "id": 158,
+            "dutch_word": "Alles goed?",
+            "english_translation": "Everything alright?"
+        },
+        {
+            "id": 159,
+            "dutch_word": "Fijne avond",
+            "english_translation": "Have a nice evening"
+        },
+        {
+            "id": 160,
+            "dutch_word": "Ik hoop dat alles goed gaat",
+            "english_translation": "I hope everything is going well"
+        },
+        {
+            "id": 161,
+            "dutch_word": "Tot gauw",
+            "english_translation": "See you soon"
+        },
+        {
+            "id": 162,
+            "dutch_word": "Fijn je te zien",
+            "english_translation": "Nice to see you"
+        },
+        {
+            "id": 163,
+            "dutch_word": "Hoe gaat het met je familie?",
+            "english_translation": "How is your family?"
+        },
+        {
+            "id": 164,
+            "dutch_word": "Ik spreek je later",
+            "english_translation": "I'll talk to you later"
+        },
+        {
+            "id": 165,
+            "dutch_word": "Bedankt voor je tijd",
+            "english_translation": "Thank you for your time"
+        },
+        {
+            "id": 166,
+            "dutch_word": "Wat leuk om je weer te zien",
+            "english_translation": "How nice to see you again"
+        },
+        {
+            "id": 167,
+            "dutch_word": "Ik ben blij je te zien",
+            "english_translation": "I'm glad to see you"
+        },
+        {
+            "id": 369,
+            "dutch_word": "Wat heb je vandaag gedaan?",
+            "english_translation": "What did you do today?"
+        },
+        {
+            "id": 370,
+            "dutch_word": "Ik wens je veel succes",
+            "english_translation": "I wish you good luck"
+        },
+        {
+            "id": 371,
+            "dutch_word": "Veel plezier",
+            "english_translation": "Have fun"
+        },
+        {
+            "id": 372,
+            "dutch_word": "Ik ben zo terug",
+            "english_translation": "I'll be right back"
+        },
+        {
+            "id": 373,
+            "dutch_word": "Het spijt me voor de vertraging",
+            "english_translation": "Sorry for the delay"
+        },
+        {
+            "id": 374,
+            "dutch_word": "Mag ik je iets vragen?",
+            "english_translation": "May I ask you something?"
+        },
+        {
+            "id": 375,
+            "dutch_word": "Hoe lang blijf je?",
+            "english_translation": "How long are you staying?"
+        },
+        {
+            "id": 376,
+            "dutch_word": "Is alles in orde?",
+            "english_translation": "Is everything alright?"
+        },
+        {
+            "id": 377,
+            "dutch_word": "Ik ben blij je weer te zien",
+            "english_translation": "I'm happy to see you again"
+        },
+        {
+            "id": 378,
+            "dutch_word": "Tot over een week",
+            "english_translation": "See you in a week"
+        },
+        {
+            "id": 495,
+            "dutch_word": "Hoe is je weekend geweest?",
+            "english_translation": "How was your weekend?"
+        },
+        {
+            "id": 496,
+            "dutch_word": "Fijne reis",
+            "english_translation": "Have a good trip"
+        },
+        {
+            "id": 497,
+            "dutch_word": "Ik bel je later",
+            "english_translation": "I'll call you later"
+        },
+        {
+            "id": 498,
+            "dutch_word": "Ik hoop dat je het leuk vindt",
+            "english_translation": "I hope you like it"
+        },
+        {
+            "id": 499,
+            "dutch_word": "Welkom terug",
+            "english_translation": "Welcome back"
+        },
+        {
+            "id": 500,
+            "dutch_word": "Hoe was je dag?",
+            "english_translation": "How was your day?"
+        },
+        {
+            "id": 501,
+            "dutch_word": "Ben je goed aangekomen?",
+            "english_translation": "Did you arrive safely?"
+        },
+        {
+            "id": 502,
+            "dutch_word": "Wat fijn om je te zien",
+            "english_translation": "How nice to see you"
+        },
+        {
+            "id": 503,
+            "dutch_word": "Ik heb je gemist",
+            "english_translation": "I missed you"
+        },
+        {
+            "id": 504,
+            "dutch_word": "Wat een verrassing!",
+            "english_translation": "What a surprise!"
+        }
+    ],
+    "Food": [
+        {
+            "id": 16,
+            "dutch_word": "Brood",
+            "english_translation": "Bread"
+        },
+        {
+            "id": 17,
+            "dutch_word": "Koffie",
+            "english_translation": "Coffee"
+        },
+        {
+            "id": 18,
+            "dutch_word": "Thee",
+            "english_translation": "Tea"
+        },
+        {
+            "id": 19,
+            "dutch_word": "Water",
+            "english_translation": "Water"
+        },
+        {
+            "id": 20,
+            "dutch_word": "Kaas",
+            "english_translation": "Cheese"
+        },
+        {
+            "id": 21,
+            "dutch_word": "Appel",
+            "english_translation": "Apple"
+        },
+        {
+            "id": 22,
+            "dutch_word": "Boterham",
+            "english_translation": "Sandwich"
+        },
+        {
+            "id": 23,
+            "dutch_word": "Melk",
+            "english_translation": "Milk"
+        },
+        {
+            "id": 24,
+            "dutch_word": "Suiker",
+            "english_translation": "Sugar"
+        },
+        {
+            "id": 25,
+            "dutch_word": "Zout",
+            "english_translation": "Salt"
+        },
+        {
+            "id": 26,
+            "dutch_word": "Peper",
+            "english_translation": "Pepper"
+        },
+        {
+            "id": 27,
+            "dutch_word": "Vlees",
+            "english_translation": "Meat"
+        },
+        {
+            "id": 28,
+            "dutch_word": "Vis",
+            "english_translation": "Fish"
+        },
+        {
+            "id": 29,
+            "dutch_word": "Rijst",
+            "english_translation": "Rice"
+        },
+        {
+            "id": 30,
+            "dutch_word": "Pasta",
+            "english_translation": "Pasta"
+        },
+        {
+            "id": 31,
+            "dutch_word": "Aardappel",
+            "english_translation": "Potato"
+        },
+        {
+            "id": 32,
+            "dutch_word": "Groente",
+            "english_translation": "Vegetable"
+        },
+        {
+            "id": 33,
+            "dutch_word": "Fruit",
+            "english_translation": "Fruit"
+        },
+        {
+            "id": 34,
+            "dutch_word": "Soep",
+            "english_translation": "Soup"
+        },
+        {
+            "id": 35,
+            "dutch_word": "Salade",
+            "english_translation": "Salad"
+        },
+        {
+            "id": 36,
+            "dutch_word": "Friet",
+            "english_translation": "French fries"
+        },
+        {
+            "id": 37,
+            "dutch_word": "Stroopwafel",
+            "english_translation": "Stroopwafel"
+        },
+        {
+            "id": 168,
+            "dutch_word": "Volkorenbrood",
+            "english_translation": "Whole wheat bread"
+        },
+        {
+            "id": 169,
+            "dutch_word": "Mineraalwater",
+            "english_translation": "Mineral water"
+        },
+        {
+            "id": 170,
+            "dutch_word": "Roerei",
+            "english_translation": "Scrambled eggs"
+        },
+        {
+            "id": 171,
+            "dutch_word": "Gerookte zalm",
+            "english_translation": "Smoked salmon"
+        },
+        {
+            "id": 172,
+            "dutch_word": "Groentestoofpot",
+            "english_translation": "Vegetable stew"
+        },
+        {
+            "id": 173,
+            "dutch_word": "Gehaktballen",
+            "english_translation": "Meatballs"
+        },
+        {
+            "id": 174,
+            "dutch_word": "Kruidige kip",
+            "english_translation": "Spicy chicken"
+        },
+        {
+            "id": 175,
+            "dutch_word": "Bruine rijst",
+            "english_translation": "Brown rice"
+        },
+        {
+            "id": 176,
+            "dutch_word": "Magere yoghurt",
+            "english_translation": "Low-fat yogurt"
+        },
+        {
+            "id": 177,
+            "dutch_word": "Vegetarische burger",
+            "english_translation": "Vegetarian burger"
+        },
+        {
+            "id": 178,
+            "dutch_word": "Havermout",
+            "english_translation": "Oatmeal"
+        },
+        {
+            "id": 179,
+            "dutch_word": "Bessen",
+            "english_translation": "Berries"
+        },
+        {
+            "id": 180,
+            "dutch_word": "Eieren",
+            "english_translation": "Eggs"
+        },
+        {
+            "id": 181,
+            "dutch_word": "Volkorenpasta",
+            "english_translation": "Wholegrain pasta"
+        },
+        {
+            "id": 182,
+            "dutch_word": "Gestoofde groenten",
+            "english_translation": "Steamed vegetables"
+        },
+        {
+            "id": 183,
+            "dutch_word": "Runderstoofpot",
+            "english_translation": "Beef stew"
+        },
+        {
+            "id": 184,
+            "dutch_word": "Kalkoen",
+            "english_translation": "Turkey"
+        },
+        {
+            "id": 185,
+            "dutch_word": "Boerenkool",
+            "english_translation": "Kale"
+        },
+        {
+            "id": 186,
+            "dutch_word": "Courgette",
+            "english_translation": "Zucchini"
+        },
+        {
+            "id": 187,
+            "dutch_word": "Aubergine",
+            "english_translation": "Eggplant"
+        },
+        {
+            "id": 188,
+            "dutch_word": "Pindakaas",
+            "english_translation": "Peanut butter"
+        },
+        {
+            "id": 189,
+            "dutch_word": "Speculaas",
+            "english_translation": "Spiced biscuit"
+        },
+        {
+            "id": 190,
+            "dutch_word": "Erwtensoep",
+            "english_translation": "Pea soup"
+        },
+        {
+            "id": 191,
+            "dutch_word": "Stamppot",
+            "english_translation": "Mashed potato dish"
+        },
+        {
+            "id": 192,
+            "dutch_word": "Haring",
+            "english_translation": "Herring"
+        },
+        {
+            "id": 379,
+            "dutch_word": "Kruidenthee",
+            "english_translation": "Herbal tea"
+        },
+        {
+            "id": 380,
+            "dutch_word": "Volkorencrackers",
+            "english_translation": "Wholegrain crackers"
+        },
+        {
+            "id": 381,
+            "dutch_word": "Gebakken ei",
+            "english_translation": "Fried egg"
+        },
+        {
+            "id": 382,
+            "dutch_word": "Honing",
+            "english_translation": "Honey"
+        },
+        {
+            "id": 383,
+            "dutch_word": "Gekookte aardappel",
+            "english_translation": "Boiled potato"
+        },
+        {
+            "id": 384,
+            "dutch_word": "Linzen",
+            "english_translation": "Lentils"
+        },
+        {
+            "id": 385,
+            "dutch_word": "Bruin brood",
+            "english_translation": "Brown bread"
+        },
+        {
+            "id": 386,
+            "dutch_word": "Roomkaas",
+            "english_translation": "Cream cheese"
+        },
+        {
+            "id": 387,
+            "dutch_word": "Maaltijdsalade",
+            "english_translation": "Meal salad"
+        },
+        {
+            "id": 388,
+            "dutch_word": "Mandarijn",
+            "english_translation": "Mandarin"
+        },
+        {
+            "id": 389,
+            "dutch_word": "Bruine bonen",
+            "english_translation": "Brown beans"
+        },
+        {
+            "id": 390,
+            "dutch_word": "Komkommer",
+            "english_translation": "Cucumber"
+        },
+        {
+            "id": 391,
+            "dutch_word": "Spinazie",
+            "english_translation": "Spinach"
+        },
+        {
+            "id": 392,
+            "dutch_word": "Bloemkool",
+            "english_translation": "Cauliflower"
+        },
+        {
+            "id": 393,
+            "dutch_word": "Knoflook",
+            "english_translation": "Garlic"
+        },
+        {
+            "id": 505,
+            "dutch_word": "Tosti",
+            "english_translation": "Grilled cheese sandwich"
+        },
+        {
+            "id": 506,
+            "dutch_word": "Erwten",
+            "english_translation": "Peas"
+        },
+        {
+            "id": 507,
+            "dutch_word": "Boekweit",
+            "english_translation": "Buckwheat"
+        },
+        {
+            "id": 508,
+            "dutch_word": "Stoofvlees",
+            "english_translation": "Stewed meat"
+        },
+        {
+            "id": 509,
+            "dutch_word": "Roerbakgroenten",
+            "english_translation": "Stir-fried vegetables"
+        },
+        {
+            "id": 510,
+            "dutch_word": "Volkorenrijst",
+            "english_translation": "Whole grain rice"
+        },
+        {
+            "id": 511,
+            "dutch_word": "Gegrilde kip",
+            "english_translation": "Grilled chicken"
+        },
+        {
+            "id": 512,
+            "dutch_word": "Geroosterde groenten",
+            "english_translation": "Roasted vegetables"
+        },
+        {
+            "id": 513,
+            "dutch_word": "Peulvruchten",
+            "english_translation": "Legumes"
+        },
+        {
+            "id": 514,
+            "dutch_word": "Tomatensoep",
+            "english_translation": "Tomato soup"
+        }
+    ],
+    "Travel": [
+        {
+            "id": 38,
+            "dutch_word": "Trein",
+            "english_translation": "Train"
+        },
+        {
+            "id": 39,
+            "dutch_word": "Vliegtuig",
+            "english_translation": "Airplane"
+        },
+        {
+            "id": 40,
+            "dutch_word": "Bus",
+            "english_translation": "Bus"
+        },
+        {
+            "id": 41,
+            "dutch_word": "Metro",
+            "english_translation": "Subway"
+        },
+        {
+            "id": 42,
+            "dutch_word": "Station",
+            "english_translation": "Station"
+        },
+        {
+            "id": 43,
+            "dutch_word": "Kaartje",
+            "english_translation": "Ticket"
+        },
+        {
+            "id": 44,
+            "dutch_word": "Hotel",
+            "english_translation": "Hotel"
+        },
+        {
+            "id": 45,
+            "dutch_word": "Paspoort",
+            "english_translation": "Passport"
+        },
+        {
+            "id": 46,
+            "dutch_word": "Bagage",
+            "english_translation": "Luggage"
+        },
+        {
+            "id": 47,
+            "dutch_word": "Links",
+            "english_translation": "Left"
+        },
+        {
+            "id": 48,
+            "dutch_word": "Rechts",
+            "english_translation": "Right"
+        },
+        {
+            "id": 49,
+            "dutch_word": "Rechtdoor",
+            "english_translation": "Straight ahead"
+        },
+        {
+            "id": 50,
+            "dutch_word": "Waar is",
+            "english_translation": "Where is"
+        },
+        {
+            "id": 51,
+            "dutch_word": "Ver",
+            "english_translation": "Far"
+        },
+        {
+            "id": 52,
+            "dutch_word": "Dichtbij",
+            "english_translation": "Near"
+        },
+        {
+            "id": 53,
+            "dutch_word": "Centrum",
+            "english_translation": "City center"
+        },
+        {
+            "id": 54,
+            "dutch_word": "Luchthaven",
+            "english_translation": "Airport"
+        },
+        {
+            "id": 55,
+            "dutch_word": "Fiets",
+            "english_translation": "Bicycle"
+        },
+        {
+            "id": 56,
+            "dutch_word": "Tram",
+            "english_translation": "Tram"
+        },
+        {
+            "id": 57,
+            "dutch_word": "Auto",
+            "english_translation": "Car"
+        },
+        {
+            "id": 58,
+            "dutch_word": "Taxi",
+            "english_translation": "Taxi"
+        },
+        {
+            "id": 59,
+            "dutch_word": "Boot",
+            "english_translation": "Boat"
+        },
+        {
+            "id": 193,
+            "dutch_word": "Bezienswaardigheid",
+            "english_translation": "Sightseeing spot"
+        },
+        {
+            "id": 194,
+            "dutch_word": "Reisverzekering",
+            "english_translation": "Travel insurance"
+        },
+        {
+            "id": 195,
+            "dutch_word": "Toeristeninformatie",
+            "english_translation": "Tourist information"
+        },
+        {
+            "id": 196,
+            "dutch_word": "Openbaar vervoer",
+            "english_translation": "Public transport"
+        },
+        {
+            "id": 197,
+            "dutch_word": "Internationale luchthaven",
+            "english_translation": "International airport"
+        },
+        {
+            "id": 198,
+            "dutch_word": "Vertraging",
+            "english_translation": "Delay"
+        },
+        {
+            "id": 199,
+            "dutch_word": "Incheckbalie",
+            "english_translation": "Check-in desk"
+        },
+        {
+            "id": 200,
+            "dutch_word": "Bagageband",
+            "english_translation": "Baggage carousel"
+        },
+        {
+            "id": 201,
+            "dutch_word": "Vliegtuigmaatschappij",
+            "english_translation": "Airline"
+        },
+        {
+            "id": 202,
+            "dutch_word": "Reisroute",
+            "english_translation": "Itinerary"
+        },
+        {
+            "id": 203,
+            "dutch_word": "Begeleide tour",
+            "english_translation": "Guided tour"
+        },
+        {
+            "id": 204,
+            "dutch_word": "Reisgids",
+            "english_translation": "Travel guide"
+        },
+        {
+            "id": 205,
+            "dutch_word": "Inchecken",
+            "english_translation": "To check in"
+        },
+        {
+            "id": 206,
+            "dutch_word": "Uitschrijven",
+            "english_translation": "To check out"
+        },
+        {
+            "id": 207,
+            "dutch_word": "Aankomsttijd",
+            "english_translation": "Arrival time"
+        },
+        {
+            "id": 208,
+            "dutch_word": "Vertrektijd",
+            "english_translation": "Departure time"
+        },
+        {
+            "id": 209,
+            "dutch_word": "Boekingsbevestiging",
+            "english_translation": "Booking confirmation"
+        },
+        {
+            "id": 210,
+            "dutch_word": "Vluchtinformatie",
+            "english_translation": "Flight information"
+        },
+        {
+            "id": 211,
+            "dutch_word": "Huurauto",
+            "english_translation": "Rental car"
+        },
+        {
+            "id": 212,
+            "dutch_word": "Bagagekluis",
+            "english_translation": "Luggage locker"
+        },
+        {
+            "id": 213,
+            "dutch_word": "Tolweg",
+            "english_translation": "Toll road"
+        },
+        {
+            "id": 214,
+            "dutch_word": "Reisadvies",
+            "english_translation": "Travel advice"
+        },
+        {
+            "id": 215,
+            "dutch_word": "Veerboot",
+            "english_translation": "Ferry"
+        },
+        {
+            "id": 216,
+            "dutch_word": "Grenscontrole",
+            "english_translation": "Border control"
+        },
+        {
+            "id": 217,
+            "dutch_word": "Wegenkaart",
+            "english_translation": "Road map"
+        },
+        {
+            "id": 394,
+            "dutch_word": "Parkeergarage",
+            "english_translation": "Parking garage"
+        },
+        {
+            "id": 395,
+            "dutch_word": "Routebeschrijving",
+            "english_translation": "Directions"
+        },
+        {
+            "id": 396,
+            "dutch_word": "Ticketautomaat",
+            "english_translation": "Ticket machine"
+        },
+        {
+            "id": 397,
+            "dutch_word": "Busstation",
+            "english_translation": "Bus station"
+        },
+        {
+            "id": 398,
+            "dutch_word": "Toeristenbus",
+            "english_translation": "Tourist bus"
+        },
+        {
+            "id": 399,
+            "dutch_word": "Visum",
+            "english_translation": "Visa"
+        },
+        {
+            "id": 400,
+            "dutch_word": "Hotelreservering",
+            "english_translation": "Hotel reservation"
+        },
+        {
+            "id": 401,
+            "dutch_word": "Autoverhuur",
+            "english_translation": "Car rental"
+        },
+        {
+            "id": 402,
+            "dutch_word": "Buitenlandse valuta",
+            "english_translation": "Foreign currency"
+        },
+        {
+            "id": 403,
+            "dutch_word": "Veiligheidscontrole",
+            "english_translation": "Security check"
+        },
+        {
+            "id": 404,
+            "dutch_word": "Inchecktijd",
+            "english_translation": "Check-in time"
+        },
+        {
+            "id": 405,
+            "dutch_word": "Reisduur",
+            "english_translation": "Travel duration"
+        },
+        {
+            "id": 406,
+            "dutch_word": "Vliegtijd",
+            "english_translation": "Flight time"
+        },
+        {
+            "id": 407,
+            "dutch_word": "Reiskosten",
+            "english_translation": "Travel expenses"
+        },
+        {
+            "id": 408,
+            "dutch_word": "Bagagelimiet",
+            "english_translation": "Baggage allowance"
+        },
+        {
+            "id": 515,
+            "dutch_word": "Toeristische attractie",
+            "english_translation": "Tourist attraction"
+        },
+        {
+            "id": 516,
+            "dutch_word": "Stadsplattegrond",
+            "english_translation": "City map"
+        },
+        {
+            "id": 517,
+            "dutch_word": "Reisdocumenten",
+            "english_translation": "Travel documents"
+        },
+        {
+            "id": 518,
+            "dutch_word": "Vliegtuigstoel",
+            "english_translation": "Airplane seat"
+        },
+        {
+            "id": 519,
+            "dutch_word": "Internationale vlucht",
+            "english_translation": "International flight"
+        },
+        {
+            "id": 520,
+            "dutch_word": "Handbagage",
+            "english_translation": "Carry-on luggage"
+        },
+        {
+            "id": 521,
+            "dutch_word": "Aankomsthal",
+            "english_translation": "Arrival hall"
+        },
+        {
+            "id": 522,
+            "dutch_word": "Vertrekhal",
+            "english_translation": "Departure hall"
+        },
+        {
+            "id": 523,
+            "dutch_word": "Boekingsnummer",
+            "english_translation": "Booking number"
+        },
+        {
+            "id": 524,
+            "dutch_word": "Bagage claim",
+            "english_translation": "Baggage claim"
+        }
+    ],
+    "Daily Life": [
+        {
+            "id": 61,
+            "dutch_word": "Huis",
+            "english_translation": "House"
+        },
+        {
+            "id": 62,
+            "dutch_word": "Kamer",
+            "english_translation": "Room"
+        },
+        {
+            "id": 63,
+            "dutch_word": "Keuken",
+            "english_translation": "Kitchen"
+        },
+        {
+            "id": 64,
+            "dutch_word": "Badkamer",
+            "english_translation": "Bathroom"
+        },
+        {
+            "id": 65,
+            "dutch_word": "Stoel",
+            "english_translation": "Chair"
+        },
+        {
+            "id": 66,
+            "dutch_word": "Tafel",
+            "english_translation": "Table"
+        },
+        {
+            "id": 67,
+            "dutch_word": "Bed",
+            "english_translation": "Bed"
+        },
+        {
+            "id": 68,
+            "dutch_word": "Deur",
+            "english_translation": "Door"
+        },
+        {
+            "id": 69,
+            "dutch_word": "Raam",
+            "english_translation": "Window"
+        },
+        {
+            "id": 70,
+            "dutch_word": "Licht",
+            "english_translation": "Light"
+        },
+        {
+            "id": 71,
+            "dutch_word": "Sleutel",
+            "english_translation": "Key"
+        },
+        {
+            "id": 72,
+            "dutch_word": "Wasmachine",
+            "english_translation": "Washing machine"
+        },
+        {
+            "id": 73,
+            "dutch_word": "Televisie",
+            "english_translation": "Television"
+        },
+        {
+            "id": 74,
+            "dutch_word": "Computer",
+            "english_translation": "Computer"
+        },
+        {
+            "id": 75,
+            "dutch_word": "Telefoon",
+            "english_translation": "Phone"
+        },
+        {
+            "id": 218,
+            "dutch_word": "Aanrecht",
+            "english_translation": "Countertop"
+        },
+        {
+            "id": 219,
+            "dutch_word": "Kledingkast",
+            "english_translation": "Wardrobe"
+        },
+        {
+            "id": 220,
+            "dutch_word": "Gordijnen",
+            "english_translation": "Curtains"
+        },
+        {
+            "id": 221,
+            "dutch_word": "Afwasmachine",
+            "english_translation": "Dishwasher"
+        },
+        {
+            "id": 222,
+            "dutch_word": "Stopcontact",
+            "english_translation": "Power outlet"
+        },
+        {
+            "id": 223,
+            "dutch_word": "Beveiligingssysteem",
+            "english_translation": "Security system"
+        },
+        {
+            "id": 224,
+            "dutch_word": "Bureaustoel",
+            "english_translation": "Office chair"
+        },
+        {
+            "id": 225,
+            "dutch_word": "Boekenkast",
+            "english_translation": "Bookshelf"
+        },
+        {
+            "id": 226,
+            "dutch_word": "Wekker",
+            "english_translation": "Alarm clock"
+        },
+        {
+            "id": 227,
+            "dutch_word": "Verwarming",
+            "english_translation": "Heating"
+        },
+        {
+            "id": 228,
+            "dutch_word": "Verlichting",
+            "english_translation": "Lighting"
+        },
+        {
+            "id": 229,
+            "dutch_word": "Ramen zemen",
+            "english_translation": "To clean windows"
+        },
+        {
+            "id": 230,
+            "dutch_word": "De was doen",
+            "english_translation": "Do the laundry"
+        },
+        {
+            "id": 231,
+            "dutch_word": "Stofzuigen",
+            "english_translation": "To vacuum"
+        },
+        {
+            "id": 232,
+            "dutch_word": "Vuilnis buiten zetten",
+            "english_translation": "Take out the trash"
+        },
+        {
+            "id": 233,
+            "dutch_word": "Strijkijzer",
+            "english_translation": "Iron"
+        },
+        {
+            "id": 234,
+            "dutch_word": "Droogrek",
+            "english_translation": "Drying rack"
+        },
+        {
+            "id": 235,
+            "dutch_word": "Afvalscheiding",
+            "english_translation": "Waste separation"
+        },
+        {
+            "id": 236,
+            "dutch_word": "Onderhoud",
+            "english_translation": "Maintenance"
+        },
+        {
+            "id": 237,
+            "dutch_word": "Huishoudbudget",
+            "english_translation": "Household budget"
+        },
+        {
+            "id": 238,
+            "dutch_word": "Verzekering afsluiten",
+            "english_translation": "Take out insurance"
+        },
+        {
+            "id": 239,
+            "dutch_word": "Huurcontract",
+            "english_translation": "Rental agreement"
+        },
+        {
+            "id": 240,
+            "dutch_word": "Energieverbruik",
+            "english_translation": "Energy consumption"
+        },
+        {
+            "id": 241,
+            "dutch_word": "Waterrekening",
+            "english_translation": "Water bill"
+        },
+        {
+            "id": 242,
+            "dutch_word": "Post ontvangen",
+            "english_translation": "Receive mail"
+        },
+        {
+            "id": 409,
+            "dutch_word": "Stroomuitval",
+            "english_translation": "Power outage"
+        },
+        {
+            "id": 410,
+            "dutch_word": "Lamp vervangen",
+            "english_translation": "Replace a bulb"
+        },
+        {
+            "id": 411,
+            "dutch_word": "Schilderen",
+            "english_translation": "Painting"
+        },
+        {
+            "id": 412,
+            "dutch_word": "Schoonmaakmiddel",
+            "english_translation": "Cleaning product"
+        },
+        {
+            "id": 413,
+            "dutch_word": "Gereedschapstool",
+            "english_translation": "Tool"
+        },
+        {
+            "id": 414,
+            "dutch_word": "Reparatie",
+            "english_translation": "Repair"
+        },
+        {
+            "id": 415,
+            "dutch_word": "Afvalcontainer",
+            "english_translation": "Trash bin"
+        },
+        {
+            "id": 416,
+            "dutch_word": "Postkantoor",
+            "english_translation": "Post office"
+        },
+        {
+            "id": 417,
+            "dutch_word": "Pakket ontvangen",
+            "english_translation": "Receive a package"
+        },
+        {
+            "id": 418,
+            "dutch_word": "Krantenabonnement",
+            "english_translation": "Newspaper subscription"
+        },
+        {
+            "id": 419,
+            "dutch_word": "Internetverbinding",
+            "english_translation": "Internet connection"
+        },
+        {
+            "id": 420,
+            "dutch_word": "Bankafschrift",
+            "english_translation": "Bank statement"
+        },
+        {
+            "id": 421,
+            "dutch_word": "Verhuisdozen",
+            "english_translation": "Moving boxes"
+        },
+        {
+            "id": 422,
+            "dutch_word": "Brandmelder",
+            "english_translation": "Smoke detector"
+        },
+        {
+            "id": 423,
+            "dutch_word": "Beveiligingscamera",
+            "english_translation": "Security camera"
+        },
+        {
+            "id": 525,
+            "dutch_word": "Waterkoker",
+            "english_translation": "Kettle"
+        },
+        {
+            "id": 526,
+            "dutch_word": "Strijkplank",
+            "english_translation": "Ironing board"
+        },
+        {
+            "id": 527,
+            "dutch_word": "Wasmiddel",
+            "english_translation": "Laundry detergent"
+        },
+        {
+            "id": 528,
+            "dutch_word": "Vloer dweilen",
+            "english_translation": "Mop the floor"
+        },
+        {
+            "id": 529,
+            "dutch_word": "Afstandsbediening",
+            "english_translation": "Remote control"
+        },
+        {
+            "id": 530,
+            "dutch_word": "Wandklok",
+            "english_translation": "Wall clock"
+        },
+        {
+            "id": 531,
+            "dutch_word": "Rolgordijn",
+            "english_translation": "Roller blind"
+        },
+        {
+            "id": 532,
+            "dutch_word": "Boormachine",
+            "english_translation": "Drill"
+        },
+        {
+            "id": 533,
+            "dutch_word": "Batterijlader",
+            "english_translation": "Battery charger"
+        },
+        {
+            "id": 534,
+            "dutch_word": "Kastslot",
+            "english_translation": "Cabinet lock"
+        }
+    ],
+    "Work": [
+        {
+            "id": 76,
+            "dutch_word": "Baan",
+            "english_translation": "Job"
+        },
+        {
+            "id": 77,
+            "dutch_word": "Werken",
+            "english_translation": "To work"
+        },
+        {
+            "id": 78,
+            "dutch_word": "Kantoor",
+            "english_translation": "Office"
+        },
+        {
+            "id": 79,
+            "dutch_word": "Collega",
+            "english_translation": "Colleague"
+        },
+        {
+            "id": 80,
+            "dutch_word": "Directeur",
+            "english_translation": "Director"
+        },
+        {
+            "id": 81,
+            "dutch_word": "Sollicitatie",
+            "english_translation": "Job application"
+        },
+        {
+            "id": 82,
+            "dutch_word": "CV",
+            "english_translation": "Resume"
+        },
+        {
+            "id": 83,
+            "dutch_word": "Vergadering",
+            "english_translation": "Meeting"
+        },
+        {
+            "id": 84,
+            "dutch_word": "Project",
+            "english_translation": "Project"
+        },
+        {
+            "id": 85,
+            "dutch_word": "Uur",
+            "english_translation": "Hour"
+        },
+        {
+            "id": 86,
+            "dutch_word": "Overuren",
+            "english_translation": "Overtime"
+        },
+        {
+            "id": 87,
+            "dutch_word": "Vakantie",
+            "english_translation": "Vacation"
+        },
+        {
+            "id": 88,
+            "dutch_word": "Werknemer",
+            "english_translation": "Employee"
+        },
+        {
+            "id": 89,
+            "dutch_word": "Werkgever",
+            "english_translation": "Employer"
+        },
+        {
+            "id": 90,
+            "dutch_word": "Betaling",
+            "english_translation": "Payment"
+        },
+        {
+            "id": 243,
+            "dutch_word": "Arbeidsovereenkomst",
+            "english_translation": "Employment contract"
+        },
+        {
+            "id": 244,
+            "dutch_word": "Functioneringsgesprek",
+            "english_translation": "Performance review"
+        },
+        {
+            "id": 245,
+            "dutch_word": "Zelfstandig ondernemer",
+            "english_translation": "Freelancer"
+        },
+        {
+            "id": 246,
+            "dutch_word": "Bedrijfspresentatie",
+            "english_translation": "Business presentation"
+        },
+        {
+            "id": 247,
+            "dutch_word": "Onkostenvergoeding",
+            "english_translation": "Expense allowance"
+        },
+        {
+            "id": 248,
+            "dutch_word": "Urenregistratie",
+            "english_translation": "Time tracking"
+        },
+        {
+            "id": 249,
+            "dutch_word": "Netwerkbijeenkomst",
+            "english_translation": "Networking event"
+        },
+        {
+            "id": 250,
+            "dutch_word": "Loopbaanontwikkeling",
+            "english_translation": "Career development"
+        },
+        {
+            "id": 251,
+            "dutch_word": "Werkomgeving",
+            "english_translation": "Work environment"
+        },
+        {
+            "id": 252,
+            "dutch_word": "Personeelszaken",
+            "english_translation": "Human resources"
+        },
+        {
+            "id": 253,
+            "dutch_word": "Tijdmanagement",
+            "english_translation": "Time management"
+        },
+        {
+            "id": 254,
+            "dutch_word": "Projectplanning",
+            "english_translation": "Project planning"
+        },
+        {
+            "id": 255,
+            "dutch_word": "Deadline halen",
+            "english_translation": "Meet a deadline"
+        },
+        {
+            "id": 256,
+            "dutch_word": "Besluitvorming",
+            "english_translation": "Decision making"
+        },
+        {
+            "id": 257,
+            "dutch_word": "Probleemoplossing",
+            "english_translation": "Problem solving"
+        },
+        {
+            "id": 258,
+            "dutch_word": "Vacature",
+            "english_translation": "Job opening"
+        },
+        {
+            "id": 259,
+            "dutch_word": "Werving en selectie",
+            "english_translation": "Recruitment and selection"
+        },
+        {
+            "id": 260,
+            "dutch_word": "Stageplaats",
+            "english_translation": "Internship position"
+        },
+        {
+            "id": 261,
+            "dutch_word": "Bedrijfscultuur",
+            "english_translation": "Company culture"
+        },
+        {
+            "id": 262,
+            "dutch_word": "Arbeidsvoorwaarden",
+            "english_translation": "Employment conditions"
+        },
+        {
+            "id": 263,
+            "dutch_word": "Sollicitatiegesprek",
+            "english_translation": "Job interview"
+        },
+        {
+            "id": 264,
+            "dutch_word": "CV opstellen",
+            "english_translation": "Write a resume"
+        },
+        {
+            "id": 265,
+            "dutch_word": "Teamvergadering",
+            "english_translation": "Team meeting"
+        },
+        {
+            "id": 266,
+            "dutch_word": "Verantwoordelijkheden",
+            "english_translation": "Responsibilities"
+        },
+        {
+            "id": 267,
+            "dutch_word": "Doorgroeimogelijkheden",
+            "english_translation": "Promotion opportunities"
+        },
+        {
+            "id": 424,
+            "dutch_word": "Salarisverhoging",
+            "english_translation": "Salary raise"
+        },
+        {
+            "id": 425,
+            "dutch_word": "Baan zoeken",
+            "english_translation": "Job hunting"
+        },
+        {
+            "id": 426,
+            "dutch_word": "Beoordelingsformulier",
+            "english_translation": "Evaluation form"
+        },
+        {
+            "id": 427,
+            "dutch_word": "Loopbaancoach",
+            "english_translation": "Career coach"
+        },
+        {
+            "id": 428,
+            "dutch_word": "Thuiswerken",
+            "english_translation": "Working from home"
+        },
+        {
+            "id": 429,
+            "dutch_word": "Conferentie",
+            "english_translation": "Conference"
+        },
+        {
+            "id": 430,
+            "dutch_word": "Aanstellingsbrief",
+            "english_translation": "Appointment letter"
+        },
+        {
+            "id": 431,
+            "dutch_word": "Inwerkperiode",
+            "english_translation": "Onboarding period"
+        },
+        {
+            "id": 432,
+            "dutch_word": "Prestatie-indicator",
+            "english_translation": "Performance indicator"
+        },
+        {
+            "id": 433,
+            "dutch_word": "Competentie",
+            "english_translation": "Competency"
+        },
+        {
+            "id": 434,
+            "dutch_word": "Teamoverleg",
+            "english_translation": "Team meeting"
+        },
+        {
+            "id": 435,
+            "dutch_word": "Projectleider",
+            "english_translation": "Project leader"
+        },
+        {
+            "id": 436,
+            "dutch_word": "Werkschema",
+            "english_translation": "Work schedule"
+        },
+        {
+            "id": 437,
+            "dutch_word": "Doelstelling",
+            "english_translation": "Objective"
+        },
+        {
+            "id": 438,
+            "dutch_word": "Functionele taken",
+            "english_translation": "Functional tasks"
+        },
+        {
+            "id": 535,
+            "dutch_word": "Projectbeheer",
+            "english_translation": "Project management"
+        },
+        {
+            "id": 536,
+            "dutch_word": "Contractondertekening",
+            "english_translation": "Contract signing"
+        },
+        {
+            "id": 537,
+            "dutch_word": "Efficiëntie",
+            "english_translation": "Efficiency"
+        },
+        {
+            "id": 538,
+            "dutch_word": "Resultaten analyseren",
+            "english_translation": "Analyze results"
+        },
+        {
+            "id": 539,
+            "dutch_word": "Sollicitatiebrief",
+            "english_translation": "Application letter"
+        },
+        {
+            "id": 540,
+            "dutch_word": "Bespreking voorbereiden",
+            "english_translation": "Prepare a meeting"
+        },
+        {
+            "id": 541,
+            "dutch_word": "Werkinstructies",
+            "english_translation": "Work instructions"
+        },
+        {
+            "id": 542,
+            "dutch_word": "Teamleider",
+            "english_translation": "Team leader"
+        },
+        {
+            "id": 543,
+            "dutch_word": "Promotie aanvragen",
+            "english_translation": "Request promotion"
+        },
+        {
+            "id": 544,
+            "dutch_word": "Beoordeling ontvangen",
+            "english_translation": "Receive evaluation"
+        }
+    ],
+    "Emotions": [
+        {
+            "id": 91,
+            "dutch_word": "Blij",
+            "english_translation": "Happy"
+        },
+        {
+            "id": 92,
+            "dutch_word": "Boos",
+            "english_translation": "Angry"
+        },
+        {
+            "id": 93,
+            "dutch_word": "Verdrietig",
+            "english_translation": "Sad"
+        },
+        {
+            "id": 94,
+            "dutch_word": "Bezorgd",
+            "english_translation": "Worried"
+        },
+        {
+            "id": 95,
+            "dutch_word": "Moe",
+            "english_translation": "Tired"
+        },
+        {
+            "id": 96,
+            "dutch_word": "Energiek",
+            "english_translation": "Energetic"
+        },
+        {
+            "id": 97,
+            "dutch_word": "Bang",
+            "english_translation": "Scared"
+        },
+        {
+            "id": 98,
+            "dutch_word": "Gelukkig",
+            "english_translation": "Joyful"
+        },
+        {
+            "id": 99,
+            "dutch_word": "Verbaasd",
+            "english_translation": "Surprised"
+        },
+        {
+            "id": 100,
+            "dutch_word": "Ontspannen",
+            "english_translation": "Relaxed"
+        },
+        {
+            "id": 268,
+            "dutch_word": "Opgewonden",
+            "english_translation": "Excited"
+        },
+        {
+            "id": 269,
+            "dutch_word": "Teleurgesteld",
+            "english_translation": "Disappointed"
+        },
+        {
+            "id": 270,
+            "dutch_word": "Verlegen",
+            "english_translation": "Shy"
+        },
+        {
+            "id": 271,
+            "dutch_word": "Geïrriteerd",
+            "english_translation": "Irritated"
+        },
+        {
+            "id": 272,
+            "dutch_word": "Trots",
+            "english_translation": "Proud"
+        },
+        {
+            "id": 273,
+            "dutch_word": "Beledigd",
+            "english_translation": "Offended"
+        },
+        {
+            "id": 274,
+            "dutch_word": "Onzeker",
+            "english_translation": "Insecure"
+        },
+        {
+            "id": 275,
+            "dutch_word": "Verward",
+            "english_translation": "Confused"
+        },
+        {
+            "id": 276,
+            "dutch_word": "Gemoedelijk",
+            "english_translation": "Good-natured"
+        },
+        {
+            "id": 277,
+            "dutch_word": "Beheerst",
+            "english_translation": "Composed"
+        },
+        {
+            "id": 278,
+            "dutch_word": "Bezorgd",
+            "english_translation": "Worried"
+        },
+        {
+            "id": 279,
+            "dutch_word": "Ontroerd",
+            "english_translation": "Emotional"
+        },
+        {
+            "id": 280,
+            "dutch_word": "Kalm",
+            "english_translation": "Calm"
+        },
+        {
+            "id": 281,
+            "dutch_word": "Vastberaden",
+            "english_translation": "Determined"
+        },
+        {
+            "id": 282,
+            "dutch_word": "In de war",
+            "english_translation": "Confused"
+        },
+        {
+            "id": 283,
+            "dutch_word": "Geïnspireerd",
+            "english_translation": "Inspired"
+        },
+        {
+            "id": 284,
+            "dutch_word": "Verbaasd",
+            "english_translation": "Amazed"
+        },
+        {
+            "id": 285,
+            "dutch_word": "Geconcentreerd",
+            "english_translation": "Focused"
+        },
+        {
+            "id": 286,
+            "dutch_word": "Vervuld",
+            "english_translation": "Fulfilled"
+        },
+        {
+            "id": 287,
+            "dutch_word": "Verlicht",
+            "english_translation": "Relieved"
+        },
+        {
+            "id": 288,
+            "dutch_word": "Hopeloos",
+            "english_translation": "Hopeless"
+        },
+        {
+            "id": 289,
+            "dutch_word": "Opgelucht",
+            "english_translation": "Relieved"
+        },
+        {
+            "id": 290,
+            "dutch_word": "Bemind",
+            "english_translation": "Loved"
+        },
+        {
+            "id": 291,
+            "dutch_word": "Gekwetst",
+            "english_translation": "Hurt"
+        },
+        {
+            "id": 292,
+            "dutch_word": "Enthousiast",
+            "english_translation": "Enthusiastic"
+        },
+        {
+            "id": 439,
+            "dutch_word": "Bezorgdheid",
+            "english_translation": "Concern"
+        },
+        {
+            "id": 440,
+            "dutch_word": "Beheersing",
+            "english_translation": "Self-control"
+        },
+        {
+            "id": 441,
+            "dutch_word": "Geduld",
+            "english_translation": "Patience"
+        },
+        {
+            "id": 442,
+            "dutch_word": "Wanhoop",
+            "english_translation": "Despair"
+        },
+        {
+            "id": 443,
+            "dutch_word": "Vertrouwen",
+            "english_translation": "Trust"
+        },
+        {
+            "id": 444,
+            "dutch_word": "Twijfel",
+            "english_translation": "Doubt"
+        },
+        {
+            "id": 445,
+            "dutch_word": "Nieuwsgierigheid",
+            "english_translation": "Curiosity"
+        },
+        {
+            "id": 446,
+            "dutch_word": "Verlangen",
+            "english_translation": "Desire"
+        },
+        {
+            "id": 447,
+            "dutch_word": "Afkeer",
+            "english_translation": "Aversion"
+        },
+        {
+            "id": 448,
+            "dutch_word": "Schuldgevoel",
+            "english_translation": "Guilt"
+        },
+        {
+            "id": 449,
+            "dutch_word": "Boosheid",
+            "english_translation": "Anger"
+        },
+        {
+            "id": 450,
+            "dutch_word": "Verveling",
+            "english_translation": "Boredom"
+        },
+        {
+            "id": 451,
+            "dutch_word": "Onrust",
+            "english_translation": "Restlessness"
+        },
+        {
+            "id": 452,
+            "dutch_word": "Blijdschap",
+            "english_translation": "Joy"
+        },
+        {
+            "id": 453,
+            "dutch_word": "Geruststelling",
+            "english_translation": "Reassurance"
+        },
+        {
+            "id": 545,
+            "dutch_word": "Begrip",
+            "english_translation": "Understanding"
+        },
+        {
+            "id": 546,
+            "dutch_word": "Ongemak",
+            "english_translation": "Discomfort"
+        },
+        {
+            "id": 547,
+            "dutch_word": "Verwondering",
+            "english_translation": "Wonder"
+        },
+        {
+            "id": 548,
+            "dutch_word": "Gevoelig",
+            "english_translation": "Sensitive"
+        },
+        {
+            "id": 549,
+            "dutch_word": "Innerlijke rust",
+            "english_translation": "Inner peace"
+        },
+        {
+            "id": 550,
+            "dutch_word": "Zelfvertrouwen",
+            "english_translation": "Self-confidence"
+        },
+        {
+            "id": 551,
+            "dutch_word": "Angst",
+            "english_translation": "Fear"
+        },
+        {
+            "id": 552,
+            "dutch_word": "Afkeer",
+            "english_translation": "Disgust"
+        },
+        {
+            "id": 553,
+            "dutch_word": "Blijheid",
+            "english_translation": "Happiness"
+        },
+        {
+            "id": 554,
+            "dutch_word": "Opluchting",
+            "english_translation": "Relief"
+        }
+    ],
+    "Shopping": [
+        {
+            "id": 101,
+            "dutch_word": "Winkel",
+            "english_translation": "Shop"
+        },
+        {
+            "id": 102,
+            "dutch_word": "Supermarkt",
+            "english_translation": "Supermarket"
+        },
+        {
+            "id": 103,
+            "dutch_word": "Kopen",
+            "english_translation": "To buy"
+        },
+        {
+            "id": 104,
+            "dutch_word": "Verkopen",
+            "english_translation": "To sell"
+        },
+        {
+            "id": 105,
+            "dutch_word": "Kassa",
+            "english_translation": "Cash register"
+        },
+        {
+            "id": 106,
+            "dutch_word": "Winkelwagen",
+            "english_translation": "Shopping cart"
+        },
+        {
+            "id": 107,
+            "dutch_word": "Prijs",
+            "english_translation": "Price"
+        },
+        {
+            "id": 108,
+            "dutch_word": "Korting",
+            "english_translation": "Discount"
+        },
+        {
+            "id": 109,
+            "dutch_word": "Rekening",
+            "english_translation": "Receipt"
+        },
+        {
+            "id": 110,
+            "dutch_word": "Pinnen",
+            "english_translation": "To pay by card"
+        },
+        {
+            "id": 111,
+            "dutch_word": "Contant",
+            "english_translation": "Cash"
+        },
+        {
+            "id": 112,
+            "dutch_word": "Tas",
+            "english_translation": "Bag"
+        },
+        {
+            "id": 113,
+            "dutch_word": "Product",
+            "english_translation": "Product"
+        },
+        {
+            "id": 114,
+            "dutch_word": "Aanbieding",
+            "english_translation": "Offer"
+        },
+        {
+            "id": 115,
+            "dutch_word": "Etalage",
+            "english_translation": "Shop window"
+        },
+        {
+            "id": 293,
+            "dutch_word": "Klantenservice",
+            "english_translation": "Customer service"
+        },
+        {
+            "id": 294,
+            "dutch_word": "Betaalbewijs",
+            "english_translation": "Proof of payment"
+        },
+        {
+            "id": 295,
+            "dutch_word": "Ruilbeleid",
+            "english_translation": "Exchange policy"
+        },
+        {
+            "id": 296,
+            "dutch_word": "Aanbiedingsfolder",
+            "english_translation": "Promotional flyer"
+        },
+        {
+            "id": 297,
+            "dutch_word": "Online bestellen",
+            "english_translation": "Order online"
+        },
+        {
+            "id": 298,
+            "dutch_word": "Thuisbezorging",
+            "english_translation": "Home delivery"
+        },
+        {
+            "id": 299,
+            "dutch_word": "Retourneren",
+            "english_translation": "To return"
+        },
+        {
+            "id": 300,
+            "dutch_word": "Voorraad",
+            "english_translation": "Stock"
+        },
+        {
+            "id": 301,
+            "dutch_word": "Winkelpersoneel",
+            "english_translation": "Store staff"
+        },
+        {
+            "id": 302,
+            "dutch_word": "Klacht indienen",
+            "english_translation": "File a complaint"
+        },
+        {
+            "id": 303,
+            "dutch_word": "Bezorgtijd",
+            "english_translation": "Delivery time"
+        },
+        {
+            "id": 304,
+            "dutch_word": "Betaalmethode",
+            "english_translation": "Payment method"
+        },
+        {
+            "id": 305,
+            "dutch_word": "Winkeltijden",
+            "english_translation": "Opening hours"
+        },
+        {
+            "id": 306,
+            "dutch_word": "Koopjeshoek",
+            "english_translation": "Bargain corner"
+        },
+        {
+            "id": 307,
+            "dutch_word": "Kwaliteitsgarantie",
+            "english_translation": "Quality guarantee"
+        },
+        {
+            "id": 308,
+            "dutch_word": "Productbeschrijving",
+            "english_translation": "Product description"
+        },
+        {
+            "id": 309,
+            "dutch_word": "Webwinkel",
+            "english_translation": "Online store"
+        },
+        {
+            "id": 310,
+            "dutch_word": "Winkelervaring",
+            "english_translation": "Shopping experience"
+        },
+        {
+            "id": 311,
+            "dutch_word": "Klanttevredenheid",
+            "english_translation": "Customer satisfaction"
+        },
+        {
+            "id": 312,
+            "dutch_word": "Tegoedbon",
+            "english_translation": "Gift card"
+        },
+        {
+            "id": 313,
+            "dutch_word": "Afrekenen",
+            "english_translation": "Check out"
+        },
+        {
+            "id": 314,
+            "dutch_word": "Winkelmandje",
+            "english_translation": "Shopping basket"
+        },
+        {
+            "id": 315,
+            "dutch_word": "Betaalautomaat",
+            "english_translation": "Payment terminal"
+        },
+        {
+            "id": 316,
+            "dutch_word": "Verzendkosten",
+            "english_translation": "Shipping costs"
+        },
+        {
+            "id": 317,
+            "dutch_word": "Aankoopbewijs",
+            "english_translation": "Proof of purchase"
+        },
+        {
+            "id": 454,
+            "dutch_word": "Etalage",
+            "english_translation": "Shop window"
+        },
+        {
+            "id": 455,
+            "dutch_word": "Winkelstraat",
+            "english_translation": "Shopping street"
+        },
+        {
+            "id": 456,
+            "dutch_word": "Kassabon",
+            "english_translation": "Receipt"
+        },
+        {
+            "id": 457,
+            "dutch_word": "Paskamer",
+            "english_translation": "Fitting room"
+        },
+        {
+            "id": 458,
+            "dutch_word": "Korting",
+            "english_translation": "Discount"
+        },
+        {
+            "id": 459,
+            "dutch_word": "Uitsluiting van korting",
+            "english_translation": "Exclusion from discount"
+        },
+        {
+            "id": 460,
+            "dutch_word": "Winkelen met vrienden",
+            "english_translation": "Shopping with friends"
+        },
+        {
+            "id": 461,
+            "dutch_word": "Prijsvergelijking",
+            "english_translation": "Price comparison"
+        },
+        {
+            "id": 462,
+            "dutch_word": "Klantenkaart",
+            "english_translation": "Loyalty card"
+        },
+        {
+            "id": 463,
+            "dutch_word": "Winkelbeoordeling",
+            "english_translation": "Store review"
+        },
+        {
+            "id": 464,
+            "dutch_word": "Online aanbieding",
+            "english_translation": "Online offer"
+        },
+        {
+            "id": 465,
+            "dutch_word": "Productkwaliteit",
+            "english_translation": "Product quality"
+        },
+        {
+            "id": 466,
+            "dutch_word": "Klantbeoordeling",
+            "english_translation": "Customer review"
+        },
+        {
+            "id": 467,
+            "dutch_word": "Retourprocedure",
+            "english_translation": "Return process"
+        },
+        {
+            "id": 468,
+            "dutch_word": "Bezorgoptie",
+            "english_translation": "Delivery option"
+        },
+        {
+            "id": 555,
+            "dutch_word": "Betalingsbewijs",
+            "english_translation": "Payment receipt"
+        },
+        {
+            "id": 556,
+            "dutch_word": "Inpakservice",
+            "english_translation": "Wrapping service"
+        },
+        {
+            "id": 557,
+            "dutch_word": "Online klantenservice",
+            "english_translation": "Online customer service"
+        },
+        {
+            "id": 558,
+            "dutch_word": "Product terugsturen",
+            "english_translation": "Return product"
+        },
+        {
+            "id": 559,
+            "dutch_word": "Leveringsbevestiging",
+            "english_translation": "Delivery confirmation"
+        },
+        {
+            "id": 560,
+            "dutch_word": "Verzendstatus",
+            "english_translation": "Shipping status"
+        },
+        {
+            "id": 561,
+            "dutch_word": "Betaalpagina",
+            "english_translation": "Payment page"
+        },
+        {
+            "id": 562,
+            "dutch_word": "Prijsindicatie",
+            "english_translation": "Price estimate"
+        },
+        {
+            "id": 563,
+            "dutch_word": "Bezorgadres",
+            "english_translation": "Delivery address"
+        },
+        {
+            "id": 564,
+            "dutch_word": "Beoordeling schrijven",
+            "english_translation": "Write a review"
+        }
+    ],
+    "Health": [
+        {
+            "id": 116,
+            "dutch_word": "Ziekenhuis",
+            "english_translation": "Hospital"
+        },
+        {
+            "id": 117,
+            "dutch_word": "Dokter",
+            "english_translation": "Doctor"
+        },
+        {
+            "id": 118,
+            "dutch_word": "Patiënt",
+            "english_translation": "Patient"
+        },
+        {
+            "id": 119,
+            "dutch_word": "Medicijn",
+            "english_translation": "Medicine"
+        },
+        {
+            "id": 120,
+            "dutch_word": "Recept",
+            "english_translation": "Prescription"
+        },
+        {
+            "id": 121,
+            "dutch_word": "Afspraak",
+            "english_translation": "Appointment"
+        },
+        {
+            "id": 122,
+            "dutch_word": "Ziek",
+            "english_translation": "Ill"
+        },
+        {
+            "id": 123,
+            "dutch_word": "Verkouden",
+            "english_translation": "Have a cold"
+        },
+        {
+            "id": 124,
+            "dutch_word": "Koorts",
+            "english_translation": "Fever"
+        },
+        {
+            "id": 125,
+            "dutch_word": "Pijn",
+            "english_translation": "Pain"
+        },
+        {
+            "id": 126,
+            "dutch_word": "Hoofd",
+            "english_translation": "Hhead"
+        },
+        {
+            "id": 127,
+            "dutch_word": "Arm",
+            "english_translation": "Arm"
+        },
+        {
+            "id": 128,
+            "dutch_word": "Been",
+            "english_translation": "Leg"
+        },
+        {
+            "id": 129,
+            "dutch_word": "Oog",
+            "english_translation": "Eye"
+        },
+        {
+            "id": 130,
+            "dutch_word": "Oor",
+            "english_translation": "Ear"
+        },
+        {
+            "id": 131,
+            "dutch_word": "Ambulance",
+            "english_translation": "Ambulance"
+        },
+        {
+            "id": 318,
+            "dutch_word": "Huisarts",
+            "english_translation": "General practitioner"
+        },
+        {
+            "id": 319,
+            "dutch_word": "Tandarts",
+            "english_translation": "Dentist"
+        },
+        {
+            "id": 320,
+            "dutch_word": "Spoedeisende hulp",
+            "english_translation": "Emergency room"
+        },
+        {
+            "id": 321,
+            "dutch_word": "Bloeddruk",
+            "english_translation": "Blood pressure"
+        },
+        {
+            "id": 322,
+            "dutch_word": "Lichaamstemperatuur",
+            "english_translation": "Body temperature"
+        },
+        {
+            "id": 323,
+            "dutch_word": "Verzekeringskaart",
+            "english_translation": "Insurance card"
+        },
+        {
+            "id": 324,
+            "dutch_word": "Diagnose",
+            "english_translation": "Diagnosis"
+        },
+        {
+            "id": 325,
+            "dutch_word": "Behandeling",
+            "english_translation": "Treatment"
+        },
+        {
+            "id": 326,
+            "dutch_word": "Herstel",
+            "english_translation": "Recovery"
+        },
+        {
+            "id": 327,
+            "dutch_word": "Chirurg",
+            "english_translation": "Surgical doctor"
+        },
+        {
+            "id": 328,
+            "dutch_word": "Ziekenfonds",
+            "english_translation": "Health insurance fund"
+        },
+        {
+            "id": 329,
+            "dutch_word": "Specialist",
+            "english_translation": "Specialist"
+        },
+        {
+            "id": 330,
+            "dutch_word": "Controleafspraak",
+            "english_translation": "Follow-up appointment"
+        },
+        {
+            "id": 331,
+            "dutch_word": "Operatie",
+            "english_translation": "Operation"
+        },
+        {
+            "id": 332,
+            "dutch_word": "Revalidatie",
+            "english_translation": "Rehabilitation"
+        },
+        {
+            "id": 333,
+            "dutch_word": "Gezondheidspreventie",
+            "english_translation": "Health prevention"
+        },
+        {
+            "id": 334,
+            "dutch_word": "Vaccinatie",
+            "english_translation": "Vaccination"
+        },
+        {
+            "id": 335,
+            "dutch_word": "Bloedonderzoek",
+            "english_translation": "Blood test"
+        },
+        {
+            "id": 336,
+            "dutch_word": "Verpleegkundige",
+            "english_translation": "Nurse"
+        },
+        {
+            "id": 337,
+            "dutch_word": "Symptoom",
+            "english_translation": "Symptom"
+        },
+        {
+            "id": 338,
+            "dutch_word": "Recept",
+            "english_translation": "Prescription"
+        },
+        {
+            "id": 339,
+            "dutch_word": "Apotheek",
+            "english_translation": "Pharmacy"
+        },
+        {
+            "id": 340,
+            "dutch_word": "Therapie",
+            "english_translation": "Therapy"
+        },
+        {
+            "id": 341,
+            "dutch_word": "Chronische ziekte",
+            "english_translation": "Chronic illness"
+        },
+        {
+            "id": 342,
+            "dutch_word": "Bewegingsproblemen",
+            "english_translation": "Mobility issues"
+        },
+        {
+            "id": 469,
+            "dutch_word": "Spierpijn",
+            "english_translation": "Muscle soreness"
+        },
+        {
+            "id": 470,
+            "dutch_word": "Hoofdpijn",
+            "english_translation": "Headache"
+        },
+        {
+            "id": 471,
+            "dutch_word": "Griep",
+            "english_translation": "Flu"
+        },
+        {
+            "id": 472,
+            "dutch_word": "Verkouden",
+            "english_translation": "Having a cold"
+        },
+        {
+            "id": 473,
+            "dutch_word": "Keelpijn",
+            "english_translation": "Sore throat"
+        },
+        {
+            "id": 474,
+            "dutch_word": "Ziekteverzekering",
+            "english_translation": "Health insurance"
+        },
+        {
+            "id": 475,
+            "dutch_word": "Ziekenhuisopname",
+            "english_translation": "Hospitalization"
+        },
+        {
+            "id": 476,
+            "dutch_word": "Medisch dossier",
+            "english_translation": "Medical record"
+        },
+        {
+            "id": 477,
+            "dutch_word": "Hulpmiddel",
+            "english_translation": "Medical aid"
+        },
+        {
+            "id": 478,
+            "dutch_word": "Chronisch vermoeidheidssyndroom",
+            "english_translation": "Chronic fatigue syndrome"
+        },
+        {
+            "id": 479,
+            "dutch_word": "Receptplichtig",
+            "english_translation": "Prescription required"
+        },
+        {
+            "id": 480,
+            "dutch_word": "Bijwerking",
+            "english_translation": "Side effect"
+        },
+        {
+            "id": 481,
+            "dutch_word": "Consultatie",
+            "english_translation": "Consultation"
+        },
+        {
+            "id": 482,
+            "dutch_word": "Herhaalrecept",
+            "english_translation": "Repeat prescription"
+        },
+        {
+            "id": 483,
+            "dutch_word": "Zorgverlener",
+            "english_translation": "Healthcare provider"
+        },
+        {
+            "id": 565,
+            "dutch_word": "Allergische reactie",
+            "english_translation": "Allergic reaction"
+        },
+        {
+            "id": 566,
+            "dutch_word": "Urineonderzoek",
+            "english_translation": "Urine test"
+        },
+        {
+            "id": 567,
+            "dutch_word": "Verband aanleggen",
+            "english_translation": "Apply bandage"
+        },
+        {
+            "id": 568,
+            "dutch_word": "Verpleegafdeling",
+            "english_translation": "Nursing ward"
+        },
+        {
+            "id": 569,
+            "dutch_word": "Herstelperiode",
+            "english_translation": "Recovery period"
+        },
+        {
+            "id": 570,
+            "dutch_word": "Medicatie innemen",
+            "english_translation": "Take medication"
+        },
+        {
+            "id": 571,
+            "dutch_word": "Afspraak maken",
+            "english_translation": "Make an appointment"
+        },
+        {
+            "id": 572,
+            "dutch_word": "Symptomen beschrijven",
+            "english_translation": "Describe symptoms"
+        },
+        {
+            "id": 573,
+            "dutch_word": "Behandelplan",
+            "english_translation": "Treatment plan"
+        },
+        {
+            "id": 574,
+            "dutch_word": "Nabehandeling",
+            "english_translation": "Aftercare"
+        }
+    ],
+    "Time": [
+        {
+            "id": 132,
+            "dutch_word": "Tijd",
+            "english_translation": "Time"
+        },
+        {
+            "id": 133,
+            "dutch_word": "Ochtend",
+            "english_translation": "Morning"
+        },
+        {
+            "id": 134,
+            "dutch_word": "Middag",
+            "english_translation": "Afternoon"
+        },
+        {
+            "id": 135,
+            "dutch_word": "Avond",
+            "english_translation": "Evening"
+        },
+        {
+            "id": 136,
+            "dutch_word": "Nacht",
+            "english_translation": "Night"
+        },
+        {
+            "id": 137,
+            "dutch_word": "Uur",
+            "english_translation": "Hour"
+        },
+        {
+            "id": 138,
+            "dutch_word": "Minuut",
+            "english_translation": "Minute"
+        },
+        {
+            "id": 139,
+            "dutch_word": "Seconde",
+            "english_translation": "Second"
+        },
+        {
+            "id": 140,
+            "dutch_word": "Dag",
+            "english_translation": "Day"
+        },
+        {
+            "id": 141,
+            "dutch_word": "Week",
+            "english_translation": "Week"
+        },
+        {
+            "id": 142,
+            "dutch_word": "Maand",
+            "english_translation": "Month"
+        },
+        {
+            "id": 143,
+            "dutch_word": "Jaar",
+            "english_translation": "Year"
+        },
+        {
+            "id": 144,
+            "dutch_word": "Gisteren",
+            "english_translation": "Yesterday"
+        },
+        {
+            "id": 145,
+            "dutch_word": "Vandaag",
+            "english_translation": "Today"
+        },
+        {
+            "id": 146,
+            "dutch_word": "Morgen",
+            "english_translation": "Tomorrow"
+        },
+        {
+            "id": 343,
+            "dutch_word": "Dagelijks",
+            "english_translation": "Daily"
+        },
+        {
+            "id": 344,
+            "dutch_word": "Wekelijks",
+            "english_translation": "Weekly"
+        },
+        {
+            "id": 345,
+            "dutch_word": "Maandelijks",
+            "english_translation": "Monthly"
+        },
+        {
+            "id": 346,
+            "dutch_word": "Drie keer per week",
+            "english_translation": "Three times a week"
+        },
+        {
+            "id": 347,
+            "dutch_word": "Ochtendspits",
+            "english_translation": "Morning rush hour"
+        },
+        {
+            "id": 348,
+            "dutch_word": "Tijdschema",
+            "english_translation": "Schedule"
+        },
+        {
+            "id": 349,
+            "dutch_word": "Afspraak verzetten",
+            "english_translation": "Reschedule an appointment"
+        },
+        {
+            "id": 350,
+            "dutch_word": "Vroeg in de ochtend",
+            "english_translation": "Early in the morning"
+        },
+        {
+            "id": 351,
+            "dutch_word": "Halverwege de week",
+            "english_translation": "Midweek"
+        },
+        {
+            "id": 352,
+            "dutch_word": "Begin van de maand",
+            "english_translation": "Start of the month"
+        },
+        {
+            "id": 353,
+            "dutch_word": "Einde van de dag",
+            "english_translation": "End of the day"
+        },
+        {
+            "id": 354,
+            "dutch_word": "Halverwege de maand",
+            "english_translation": "Mid-month"
+        },
+        {
+            "id": 355,
+            "dutch_word": "Per direct",
+            "english_translation": "Effective immediately"
+        },
+        {
+            "id": 356,
+            "dutch_word": "Vooruit plannen",
+            "english_translation": "Plan ahead"
+        },
+        {
+            "id": 357,
+            "dutch_word": "Dubbele afspraak",
+            "english_translation": "Double booking"
+        },
+        {
+            "id": 358,
+            "dutch_word": "Stipt op tijd",
+            "english_translation": "Right on time"
+        },
+        {
+            "id": 359,
+            "dutch_word": "Uitstel",
+            "english_translation": "Postponement"
+        },
+        {
+            "id": 360,
+            "dutch_word": "Tijdregistratie",
+            "english_translation": "Time logging"
+        },
+        {
+            "id": 361,
+            "dutch_word": "Punctualiteit",
+            "english_translation": "Punctuality"
+        },
+        {
+            "id": 362,
+            "dutch_word": "Langetermijnplanning",
+            "english_translation": "Long-term planning"
+        },
+        {
+            "id": 363,
+            "dutch_word": "Overuren",
+            "english_translation": "Overtime"
+        },
+        {
+            "id": 364,
+            "dutch_word": "Pauze nemen",
+            "english_translation": "Take a break"
+        },
+        {
+            "id": 365,
+            "dutch_word": "Begin van het jaar",
+            "english_translation": "Start of the year"
+        },
+        {
+            "id": 366,
+            "dutch_word": "Einddatum",
+            "english_translation": "End date"
+        },
+        {
+            "id": 367,
+            "dutch_word": "Herinnering",
+            "english_translation": "Reminder"
+        },
+        {
+            "id": 484,
+            "dutch_word": "Jaarkalender",
+            "english_translation": "Annual calendar"
+        },
+        {
+            "id": 485,
+            "dutch_word": "Kwartaal",
+            "english_translation": "Quarter (of the year)"
+        },
+        {
+            "id": 486,
+            "dutch_word": "Tijdstip",
+            "english_translation": "Time point"
+        },
+        {
+            "id": 487,
+            "dutch_word": "Agenda bijhouden",
+            "english_translation": "Keep a calendar"
+        },
+        {
+            "id": 488,
+            "dutch_word": "Middagpauze",
+            "english_translation": "Lunch break"
+        },
+        {
+            "id": 489,
+            "dutch_word": "Vroeg in de ochtend",
+            "english_translation": "Early in the morning"
+        },
+        {
+            "id": 490,
+            "dutch_word": "Tegen het einde van de dag",
+            "english_translation": "Towards the end of the day"
+        },
+        {
+            "id": 491,
+            "dutch_word": "Over een paar dagen",
+            "english_translation": "In a few days"
+        },
+        {
+            "id": 492,
+            "dutch_word": "Op tijd zijn",
+            "english_translation": "Be on time"
+        },
+        {
+            "id": 493,
+            "dutch_word": "Te laat komen",
+            "english_translation": "To arrive late"
+        },
+        {
+            "id": 575,
+            "dutch_word": "Voorbije week",
+            "english_translation": "Past week"
+        },
+        {
+            "id": 576,
+            "dutch_word": "Volgende maand",
+            "english_translation": "Next month"
+        },
+        {
+            "id": 577,
+            "dutch_word": "Tijdsplanning",
+            "english_translation": "Time planning"
+        },
+        {
+            "id": 578,
+            "dutch_word": "Later op de dag",
+            "english_translation": "Later in the day"
+        },
+        {
+            "id": 579,
+            "dutch_word": "Voor middernacht",
+            "english_translation": "Before midnight"
+        },
+        {
+            "id": 580,
+            "dutch_word": "Eerder deze week",
+            "english_translation": "Earlier this week"
+        },
+        {
+            "id": 581,
+            "dutch_word": "In het weekend",
+            "english_translation": "On the weekend"
+        },
+        {
+            "id": 582,
+            "dutch_word": "Tijd indelen",
+            "english_translation": "Organize time"
+        },
+        {
+            "id": 583,
+            "dutch_word": "Exacte tijd",
+            "english_translation": "Exact time"
+        },
+        {
+            "id": 584,
+            "dutch_word": "Voordat het te laat is",
+            "english_translation": "Before it's too late"
+        }
+    ]
+}
