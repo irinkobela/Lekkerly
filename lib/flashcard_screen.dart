@@ -1,11 +1,9 @@
 // lib/flashcard_screen.dart
 
-import 'package:flutter/foundation.dart'
-    show kIsWeb; // To check if we are on the web
 import 'package:flutter/material.dart';
 import 'package:flip_card/flip_card.dart';
-import 'package:flutter_tts/flutter_tts.dart';
 import 'package:lekkerly/models/vocabulary_models.dart';
+import 'package:lekkerly/services/cloud_tts_service.dart'; // IMPORT the new Cloud TTS service
 import 'dart:math';
 
 class FlashcardScreen extends StatefulWidget {
@@ -19,7 +17,8 @@ class FlashcardScreen extends StatefulWidget {
 
 class _FlashcardScreenState extends State<FlashcardScreen> {
   final PageController _controller = PageController();
-  final FlutterTts flutterTts = FlutterTts();
+  // NEW: Instantiate our CloudTtsService
+  final CloudTtsService _cloudTtsService = CloudTtsService();
   late List<VocabularyItem> _shuffledItems;
   int _currentIndex = 0;
 
@@ -28,7 +27,7 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
     super.initState();
     _shuffledItems = List.from(widget.vocabularyItems);
     _shuffleCards();
-    _initializeTts();
+    // We no longer need to initialize TTS here as the new service handles it.
   }
 
   void _shuffleCards() {
@@ -41,44 +40,16 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
     });
   }
 
-  // UPDATED: Smarter TTS initialization
-  void _initializeTts() async {
-    await flutterTts.awaitSpeakCompletion(true);
-    await flutterTts.setSpeechRate(0.5);
-    await flutterTts.setPitch(1.0);
-
-    // For the web, we try to find a specific Dutch voice for better quality
-    if (kIsWeb) {
-      final voices = await flutterTts.getVoices;
-      // The 'voices' is a list of maps. We need to cast it correctly.
-      final List<Map<String, String>> voicesMaps =
-          List<Map<String, String>>.from(voices);
-
-      final dutchVoice = voicesMaps.firstWhere(
-        (voice) => voice['locale']?.toLowerCase() == 'nl-nl',
-        orElse: () => {}, // Return an empty map if no perfect match
-      );
-
-      if (dutchVoice.isNotEmpty) {
-        // If we found a perfect 'nl-NL' voice, use it
-        await flutterTts.setVoice(dutchVoice);
-      } else {
-        // Otherwise, just set the language and hope for the best
-        await flutterTts.setLanguage("nl-NL");
-      }
-    } else {
-      // For mobile, setting the language is reliable
-      await flutterTts.setLanguage("nl-NL");
-    }
-  }
-
+  // UPDATED: The speak function now uses our cloud service
   Future<void> _speak(String text) async {
-    await flutterTts.speak(text);
+    // This now calls the Google Cloud API
+    await _cloudTtsService.speak(text);
   }
 
   @override
   void dispose() {
-    flutterTts.stop();
+    // Dispose of our service's resources
+    _cloudTtsService.dispose();
     _controller.dispose();
     super.dispose();
   }
