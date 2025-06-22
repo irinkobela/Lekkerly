@@ -13,6 +13,7 @@ import 'package:lekkerly/theme_provider.dart';
 import 'package:lekkerly/onboarding_screen.dart';
 import 'package:lekkerly/models/vocabulary_models.dart';
 import 'package:lekkerly/achievements_screen.dart';
+import 'package:lekkerly/settings_screen.dart'; // Import settings screen
 import 'package:lekkerly/services/favorites_service.dart';
 import 'package:lekkerly/services/progress_service.dart';
 import 'package:lekkerly/search_screen.dart';
@@ -191,6 +192,16 @@ class _CategoryListScreenState extends State<CategoryListScreen> {
         .then((_) => _loadData());
   }
 
+  // NEW: Navigation for Settings Screen
+  void _navigateToSettings() {
+    Navigator.of(context)
+        .push(
+          MaterialPageRoute(builder: (context) => const SettingsScreen()),
+        )
+        .then((_) =>
+            _loadData()); // Reload data in case the user resets something
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -240,6 +251,10 @@ class _CategoryListScreenState extends State<CategoryListScreen> {
                           icon: const Icon(Icons.emoji_events_outlined),
                           onPressed: _navigateToAchievements,
                           tooltip: 'Achievements'),
+                      IconButton(
+                          icon: const Icon(Icons.settings_outlined),
+                          onPressed: _navigateToSettings,
+                          tooltip: 'Settings'), // NEW: Settings Button
                     ],
                   ),
                   const SliverToBoxAdapter(

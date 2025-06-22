@@ -1,10 +1,12 @@
 // lib/flashcard_screen.dart
 
+import 'package:flutter/foundation.dart'
+    show kIsWeb; // To check if we are on the web
 import 'package:flutter/material.dart';
 import 'package:flip_card/flip_card.dart';
 import 'package:flutter_tts/flutter_tts.dart';
-import 'models/vocabulary_models.dart';
-import 'dart:math'; // Import for Random
+import 'package:lekkerly/models/vocabulary_models.dart';
+import 'dart:math';
 
 class FlashcardScreen extends StatefulWidget {
   final List<VocabularyItem> vocabularyItems;
@@ -18,19 +20,17 @@ class FlashcardScreen extends StatefulWidget {
 class _FlashcardScreenState extends State<FlashcardScreen> {
   final PageController _controller = PageController();
   final FlutterTts flutterTts = FlutterTts();
-  late List<VocabularyItem> _shuffledItems; // NEW: To hold the shuffled list
+  late List<VocabularyItem> _shuffledItems;
   int _currentIndex = 0;
 
   @override
   void initState() {
     super.initState();
-    // Initialize the list and shuffle it right away
     _shuffledItems = List.from(widget.vocabularyItems);
     _shuffleCards();
     _initializeTts();
   }
 
-  // NEW: Method to handle shuffling the cards
   void _shuffleCards() {
     setState(() {
       _shuffledItems.shuffle(Random());
@@ -41,11 +41,35 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
     });
   }
 
+  // UPDATED: Smarter TTS initialization
   void _initializeTts() async {
     await flutterTts.awaitSpeakCompletion(true);
-    await flutterTts.setLanguage("nl-NL");
     await flutterTts.setSpeechRate(0.5);
     await flutterTts.setPitch(1.0);
+
+    // For the web, we try to find a specific Dutch voice for better quality
+    if (kIsWeb) {
+      final voices = await flutterTts.getVoices;
+      // The 'voices' is a list of maps. We need to cast it correctly.
+      final List<Map<String, String>> voicesMaps =
+          List<Map<String, String>>.from(voices);
+
+      final dutchVoice = voicesMaps.firstWhere(
+        (voice) => voice['locale']?.toLowerCase() == 'nl-nl',
+        orElse: () => {}, // Return an empty map if no perfect match
+      );
+
+      if (dutchVoice.isNotEmpty) {
+        // If we found a perfect 'nl-NL' voice, use it
+        await flutterTts.setVoice(dutchVoice);
+      } else {
+        // Otherwise, just set the language and hope for the best
+        await flutterTts.setLanguage("nl-NL");
+      }
+    } else {
+      // For mobile, setting the language is reliable
+      await flutterTts.setLanguage("nl-NL");
+    }
   }
 
   Future<void> _speak(String text) async {
@@ -82,7 +106,6 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Flashcards'),
-        // NEW: Shuffle button in the AppBar
         actions: [
           IconButton(
             icon: const Icon(Icons.shuffle),
@@ -93,7 +116,6 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
       ),
       body: Column(
         children: [
-          // If the list is empty, show a message
           if (_shuffledItems.isEmpty)
             const Expanded(
               child: Center(
@@ -104,10 +126,10 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
             Expanded(
               child: PageView.builder(
                 controller: _controller,
-                itemCount: _shuffledItems.length, // Use the shuffled list
+                itemCount: _shuffledItems.length,
                 onPageChanged: (index) => setState(() => _currentIndex = index),
                 itemBuilder: (context, index) {
-                  final item = _shuffledItems[index]; // Use the shuffled list
+                  final item = _shuffledItems[index];
                   return Center(
                     child: Padding(
                       padding: const EdgeInsets.all(24.0),
@@ -127,7 +149,6 @@ class _FlashcardScreenState extends State<FlashcardScreen> {
                 },
               ),
             ),
-          // Hide controls if there are no cards
           if (_shuffledItems.isNotEmpty)
             Padding(
               padding: const EdgeInsets.symmetric(
@@ -182,7 +203,7 @@ class FlashcardView extends StatelessWidget {
       elevation: 8.0,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
       color: isFront
-          ? Colors.white
+          ? Theme.of(context).cardColor
           : Theme.of(context).colorScheme.primaryContainer,
       child: Center(
         child: Column(
@@ -202,7 +223,7 @@ class FlashcardView extends StatelessWidget {
                   phonetic!,
                   style: Theme.of(context).textTheme.titleMedium?.copyWith(
                         fontStyle: FontStyle.italic,
-                        color: Colors.black54,
+                        color: Theme.of(context).textTheme.bodySmall?.color,
                       ),
                 ),
               ),

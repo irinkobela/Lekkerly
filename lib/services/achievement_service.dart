@@ -8,7 +8,6 @@ import 'package:lekkerly/models/progress_model.dart';
 class AchievementService {
   static const String _unlockedKey = 'unlocked_achievements';
 
-  // A static list of all possible achievements in the app.
   final List<Achievement> _achievements = [
     Achievement(
       id: AchievementId.firstQuiz,
@@ -36,7 +35,6 @@ class AchievementService {
     ),
   ];
 
-  // Gets the master list of achievements with their current unlock status.
   Future<List<Achievement>> getAllAchievements() async {
     final unlockedIds = await _getUnlockedIds();
     for (var achievement in _achievements) {
@@ -45,13 +43,11 @@ class AchievementService {
     return _achievements;
   }
 
-  // Gets the Set of unlocked achievement ID strings from storage.
   Future<Set<String>> _getUnlockedIds() async {
     final prefs = await SharedPreferences.getInstance();
     return (prefs.getStringList(_unlockedKey) ?? []).toSet();
   }
 
-  // Unlocks a new achievement and saves it to storage.
   Future<void> _unlockAchievement(SharedPreferences prefs,
       Set<String> unlockedIds, Achievement achievement) async {
     unlockedIds.add(achievement.id.name);
@@ -59,9 +55,12 @@ class AchievementService {
     achievement.isUnlocked = true;
   }
 
-  // --- Methods to check if achievements should be unlocked ---
+  // NEW: Function to clear all achievements
+  Future<void> clearAchievements() async {
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.remove(_unlockedKey);
+  }
 
-  // Checks for achievements related to quiz performance.
   Future<List<Achievement>> checkQuizAchievements(
       List<Progress> allProgress) async {
     final prefs = await SharedPreferences.getInstance();
@@ -70,7 +69,6 @@ class AchievementService {
 
     if (allProgress.isEmpty) return newlyUnlocked;
 
-    // Check for "First Quiz"
     final firstQuizAchievement =
         _achievements.firstWhere((a) => a.id == AchievementId.firstQuiz);
     if (!unlockedIds.contains(firstQuizAchievement.id.name)) {
@@ -78,7 +76,6 @@ class AchievementService {
       newlyUnlocked.add(firstQuizAchievement);
     }
 
-    // Check for "Perfect Score"
     final perfectScoreAchievement =
         _achievements.firstWhere((a) => a.id == AchievementId.perfectScore);
     if (!unlockedIds.contains(perfectScoreAchievement.id.name)) {
@@ -90,7 +87,6 @@ class AchievementService {
       }
     }
 
-    // Check for "Dedicated Learner" (3 different days)
     final dedicatedLearnerAchievement =
         _achievements.firstWhere((a) => a.id == AchievementId.dedicatedLearner);
     if (!unlockedIds.contains(dedicatedLearnerAchievement.id.name)) {
@@ -108,7 +104,6 @@ class AchievementService {
     return newlyUnlocked;
   }
 
-  // Checks for achievements related to favoriting words.
   Future<List<Achievement>> checkFavoriteAchievements(
       List<int> favoriteIds) async {
     final prefs = await SharedPreferences.getInstance();

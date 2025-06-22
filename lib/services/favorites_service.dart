@@ -5,7 +5,6 @@ import 'package:shared_preferences/shared_preferences.dart';
 class FavoritesService {
   static const String _favoritesKey = 'favorite_words';
 
-  // Get the list of all favorite word IDs
   Future<List<int>> getFavoriteIds() async {
     final prefs = await SharedPreferences.getInstance();
     final List<String> favoriteIdStrings =
@@ -13,7 +12,6 @@ class FavoritesService {
     return favoriteIdStrings.map((id) => int.parse(id)).toList();
   }
 
-  // Add a word to favorites
   Future<void> addFavorite(int wordId) async {
     final prefs = await SharedPreferences.getInstance();
     final List<int> favoriteIds = await getFavoriteIds();
@@ -23,7 +21,6 @@ class FavoritesService {
     }
   }
 
-  // Remove a word from favorites
   Future<void> removeFavorite(int wordId) async {
     final prefs = await SharedPreferences.getInstance();
     final List<int> favoriteIds = await getFavoriteIds();
@@ -33,7 +30,12 @@ class FavoritesService {
     }
   }
 
-  // Helper method to save the list to SharedPreferences
+  // NEW: Function to clear all favorites
+  Future<void> clearFavorites() async {
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.remove(_favoritesKey);
+  }
+
   Future<void> _saveFavorites(List<int> ids, SharedPreferences prefs) async {
     final List<String> favoriteIdStrings =
         ids.map((id) => id.toString()).toList();
