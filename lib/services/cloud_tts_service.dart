@@ -3,28 +3,29 @@
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 import 'package:audioplayers/audioplayers.dart';
+import 'package:lekkerly/api_keys.dart'; // Import the new secret file
 
 class CloudTtsService {
-  // --- IMPORTANT ---
-  // Paste the API key you generated from the Google Cloud Console here.
-  // For a real-world, published app, it's more secure to hide this key
-  // on a server, but for a personal project, this is the simplest method.
-  final String _apiKey = 'AIzaSyDjsIxA1gOe8EaEZflPq1hnDVsOpSR9G0s';
+  // The API key is now loaded securely from the api_keys.dart file.
+  final String _apiKey = googleCloudApiKey;
 
   final String _url = 'https://texttospeech.googleapis.com/v1/text:synthesize';
   final AudioPlayer _audioPlayer = AudioPlayer();
 
-  // A simple cache to store audio data for words we've already fetched.
   final Map<String, String> _audioCache = {};
 
   Future<void> speak(String text) async {
-    // If we've already fetched this audio, play it from the cache.
     if (_audioCache.containsKey(text)) {
       await _playAudio(_audioCache[text]!);
       return;
     }
 
-    // If not cached, make a new request to the API.
+    // Check if the API key has been set.
+    if (_apiKey == 'PASTE_YOUR_NEW_API_KEY_HERE' || _apiKey.isEmpty) {
+      print('API Key is not set in lib/api_keys.dart. Please add it.');
+      return;
+    }
+
     try {
       final response = await http.post(
         Uri.parse('$_url?key=$_apiKey'),
@@ -33,23 +34,18 @@ class CloudTtsService {
           'input': {'text': text},
           'voice': {
             'languageCode': 'nl-NL',
-            'name':
-                'nl-NL-Chirp3-HD-Achernar' // The high-quality voice you chose!
+            'name': 'nl-NL-Chirp3-HD-Achernar'
           },
-          'audioConfig': {'audioEncoding': 'MP3'} // Request MP3 format
+          'audioConfig': {'audioEncoding': 'MP3'}
         }),
       );
 
       if (response.statusCode == 200) {
         final body = json.decode(response.body);
         final String audioContent = body['audioContent'];
-
-        // Save the audio to our cache...
         _audioCache[text] = audioContent;
-        // ...and play it.
         await _playAudio(audioContent);
       } else {
-        // Handle API errors
         print('Cloud TTS Error: ${response.body}');
       }
     } catch (e) {
@@ -58,7 +54,6 @@ class CloudTtsService {
   }
 
   Future<void> _playAudio(String base64Audio) async {
-    // The audioplayers package can play audio directly from a base64 source.
     await _audioPlayer.play(BytesSource(base64Decode(base64Audio)));
   }
 
